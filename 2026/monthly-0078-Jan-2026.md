@@ -124,6 +124,42 @@ PR 列表
 
 ## Go
 
+Authored/Co-authored Go-mainline CLs:
+
+- 647596: runtime: unify C -> Go ABI transitions on riscv64 | https://go-review.googlesource.com/c/go/+/647596
+- 659175: cmd/link: generate proper attributes for riscv profile | https://go-review.googlesource.com/c/go/+/659175
+- 657036: internal/bytealg: vector implementation of count 1 byte for riscv64 | https://go-review.googlesource.com/c/go/+/657036 
+- 663778: cmd/asm, cmd/internal/obj: add zvbb/zvbc/zvkb for riscv64 | https://go-review.googlesource.com/c/go/+/663778
+- 664155: cmd/asm, cmd/internal/obj: add crypto algorithm suites for riscv64 | https://go-review.googlesource.com/c/go/+/664155
+- 663675: cmd/internal/obj: add crypto extension for riscv64 | https://go-review.googlesource.com/c/go/+/663675
+- 702695: cmd/internal/obj: add zfh extensions for riscv64 | https://go-review.googlesource.com/c/go/+/702695
+- 711075: chacha20: improve performance for riscv64 | https://go-review.googlesource.com/c/crypto/+/711075
+- 719880: math/big: use vector for addVV on riscv64 | https://go-review.googlesource.com/c/go/+/719880
+- 728940: runtime/secret: enable secret on riscv64 | https://go-review.googlesource.com/c/go/+/728940
+- 732540: runtime: reduce stack size of gcWriteBarrier on riscv64 | https://go-review.googlesource.com/c/go/+/732540 [abandon]
+- 733621: cmd/compile: (riscv64) optimize float32(abs|sqrt64(float64(x))) | https://go-review.googlesource.com/c/go/+/733621
+- 734680: math: add benchmark for float32/float64 conversions | https://go-review.googlesource.com/c/go/+/734680 
+- 733380: cmd/compile: optimize loads from readonly globals into constants on riscv64 | https://go-review.googlesource.com/c/go/+/733380
+
+Reviewed Go-mainline CLs:
+
+- 652717: doc, cmd/internal/obj/riscv: document the riscv64 assembler | https://go-review.googlesource.com/c/go/+/652717 
+- 646736: internal/bytealg: vector implementation of equal for riscv64 | https://go-review.googlesource.com/c/go/+/646736
+- 646737: internal/bytealg: vector implementation of compare for riscv64 | https://go-review.googlesource.com/c/go/+/646737
+- 670875: riscv64: fix the path to the RISC-V extensions in spec.go | https://go-review.googlesource.com/c/arch/+/670875
+- cmd/compile: line number debug info regression in go1.25 around literal rewriting | https://github.com/golang/go/issues/74576
+- 348389: cmd/compile: emit classify instructions for infinity tests on riscv64 | https://go-review.googlesource.com/c/go/+/348389
+- 670875: riscv64: fix the path to the RISC-V extensions in spec.go | https://go-review.googlesource.com/c/arch/+/670875
+- 690495: runtime: identify virtual memory layout for riscv64 | https://go-review.googlesource.com/c/go/+/690495
+- 703715: cmd/compile/internal/ssa: add codegen for Zicond extension on riscv64 | https://go-review.googlesource.com/c/go/+/703715
+- 717560: cmd/compile: use FCLASSD for subnormal checks on riscv64 | https://go-review.googlesource.com/c/go/+/717560 [merged]
+- 705996: cmd/compile/internal/ssa: add codegen for Zicond extension on riscv64 | https://go-review.googlesource.com/c/go/+/705996
+- 732180: test/codegen: codify bit related code generation for riscv64 | https://go-review.googlesource.com/c/go/+/732180 [merged]
+- 734081: riscv64: fix bug in memOrder to string | https://go-review.googlesource.com/c/arch/+/734081
+- 671275: crypto/sha512: improve performance of riscv64 assembly when Zbb extension available | https://go-review.googlesource.com/c/go/+/671275
+- 717980: runtime, cmd/internal/obj/riscv: support spin lock on riscv64 | https://go-review.googlesource.com/c/go/+/717980
+
+
 ## GNU Toolchain
 - 添加了Zalasr扩展支持：
   https://patchwork.sourceware.org/project/gcc/patch/20260128075607.343141-1-jiawei@iscas.ac.cn/
